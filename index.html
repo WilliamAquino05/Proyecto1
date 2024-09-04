@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Harnisch - Consultora Financiera</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #004d40; /* Verde oscuro */
+            color: #333;
+        }
+        header {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #00796b; /* Verde más claro */
+            color: #ffffff; /* Blanco */
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em; /* Tamaño más grande */
+            margin: 0.5em 0;
+        }
+        header h2 {
+            font-size: 2em; /* Tamaño más grande */
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff; /* Blanco */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #004d40; /* Verde oscuro */
+            margin-bottom: 0.5em;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #004d40; /* Verde oscuro */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 0 20px;
+            color: #333;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+            background-color: #e3f2fd; /* Azul claro */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #004d40; /* Verde oscuro */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #004d40; /* Verde oscuro */
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        fieldset {
+            border: 1px solid #004d40; /* Verde oscuro */
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #e0f2f1; /* Verde claro */
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #004d40; /* Verde oscuro */
+            margin-bottom: 10px;
+        }
+        label input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 25px; /* Tamaño más grande */
+            color: #ffffff; /* Blanco */
+            background-color: #00796b; /* Verde fuerte */
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em; /* Tamaño de fuente más grande */
+        }
+        button:hover {
+            background-color: #004d40; /* Verde más oscuro */
+        }
+        .info-text {
+            font-size: 1.2em; /* Tamaño de fuente más grande */
+            font-weight: bold; /* Negrita */
+            color: #004d40; /* Verde oscuro */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+        .info-text p {
+            margin-bottom: 10px; /* Espaciado inferior para párrafos */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CHACO CRÉDITOS (Consultora Financiera)</h1>
+        <h2>Antonio Harnisch</h2>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h1>Créditos Personales para Activos y Pasivos Provinciales</h1>
+            <hr>
+            <div class="info-text">
+                <p>¿Necesitas un crédito?</p>
+                <p>Realizamos créditos desde mutuales como FUNDAR y LNR. También contamos con ayudas económicas. Consulta por la tuya. De forma segura y con la mejor atención.</p>
+                <p>Acércate a nuestra oficina por Obligado 151.</p>
+            </div>
+            <hr>
+            <h2>Formulario</h2>
+            <form id="contact-form">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Escribe aquí tu nombre">
+
+                <label for="lugar-de-trabajo">Lugar de Trabajo:</label>
+                <input type="text" id="lugar-de-trabajo" name="lugar-de-trabajo" placeholder="Jurisdicción">
+
+                <fieldset>
+                    <legend>Situación del solicitante</legend>
+                    <label>
+                        <input type="checkbox" name="tipo-credito" value="Pasivo"> Pasivo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="tipo-credito" value="Activo"> Activo
+                    </label>
+                </fieldset>
+
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="sexo" name="sexo" placeholder="Masculino o Femenino">
+
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="text" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="DD/MM/AAAA">
+
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" placeholder="Provincia">
+
+                <label for="ciudad">Ciudad o Localidad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad o Localidad">
+
+                <button type="button" id="whatsapp-button">Envíanos un mensaje de WhatsApp</button>
+            </form>
+        </section>
+    </main>
+    <script>
+        document.getElementById('whatsapp-button').addEventListener('click', function() {
+            const usuario = document.getElementById('usuario').value;
+            const lugarDeTrabajo = document.getElementById('lugar-de-trabajo').value;
+            const tipoCredito = Array.from(document.querySelectorAll('input[name="tipo-credito"]:checked')).map(el => el.value).join(', ');
+            const sexo = document.getElementById('sexo').value;
+            const fechaNacimiento = document.getElementById('fecha-nacimiento').value;
+            const provincia = document.getElementById('provincia').value;
+            const ciudad = document.getElementById('ciudad').value;
+
+            const message = `Usuario: ${usuario}\nLugar de Trabajo: ${lugarDeTrabajo}\nTipo de Crédito: ${tipoCredito}\nSexo: ${sexo}\nFecha de Nacimiento: ${fechaNacimiento}\nProvincia: ${provincia}\nCiudad: ${ciudad}`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const phoneNumber = '5493624928866';
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+
+</html>
+
+
